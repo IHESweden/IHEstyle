@@ -1,27 +1,20 @@
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
-
-#' Add IHE theme to ggplot chart
-#' This function allows you to add the IHE theme to your ggplot graphics.
-#' @Author: Gunnar Brådvik, email = gunnar.bradvik@ihe.se
+#' @title IHEstyle
+#' @name IHEstyle
+#' @description This package allows you to add the IHE theme to your ggplot graphics.
+#' @usage This package allows you to add the IHE theme to your ggplot graphics.
+#' @author Gunnar Brådvik, email = gunnar.bradvik@ihe.se
 #' @keywords IHE_style
+#' @aliases IHE_style
 #' @export
 #' @examples
 #' ggplot(mpg, aes(displ, cty, colour = class)) +
 #' geom_point() +
 #' IHE_style()
-#-----------------------------------
-#Installing additional packages if needed, IHE_style needs ggExtra in order to run
-#-----------------------------------
+#' @import
+#' ggplot2, ggExtra, ggthemes
+
 #Installs the library if it is not already installed
-library <- function(x)
+package_check <- function(x)
 {
   x = toString(substitute(x))
   if(!require(x,character.only=TRUE))
@@ -31,9 +24,9 @@ library <- function(x)
   }
 }
 
-library(ggExtra)
-library(ggthemes)
-#-----------------------------------
+package_check(ggplot2)
+package_check(ggExtra)
+package_check(ggthemes)
 
 #-----------------------------------
 #Iniziating the colours
