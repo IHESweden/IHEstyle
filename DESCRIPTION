@@ -15,7 +15,6 @@ Imports:
     ggplot2,
     ggExtra,
     ggthemes
-URL: https://ihe.se/
 Year: 2019
 Roxygen: list(markdown = TRUE, load = "installed")
 RoxygenNote: 7.1.1

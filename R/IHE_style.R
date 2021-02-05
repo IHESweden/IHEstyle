@@ -1,10 +1,8 @@
 #' @title IHEstyle
 #' @name IHEstyle
 #' @description This package allows you to add the IHE theme to your ggplot graphics.
-#' @usage This package allows you to add the IHE theme to your ggplot graphics.
 #' @author Gunnar Brådvik, email = gunnar.bradvik@ihe.se
 #' @keywords IHE_style
-#' @aliases IHE_style
 #' @import
 #' ggplot2, ggExtra, ggthemes
 #' @examples
@@ -12,7 +10,6 @@
 #' ggplot2::ggplot(mpg, aes(displ, cty, colour = class)) +
 #' geom_point() +
 #' IHE_style()
-#' @export
 
 #-----------------------------------
 #Iniziating the colours
@@ -56,6 +53,7 @@ Colour_Palette <- c(IHE_Blue, IHE_Orange, IHE_Red, IHE_Black, IHE_Light_Blue,
 #-----------------------------------
 #The GGplot function
 #-----------------------------------
+#' @export
 IHE_style <- function() {
   return(list(ggplot2::theme( #list combining the theme itself and some settings for the plot
     panel.background = ggplot2::element_rect(fill = NA),
@@ -81,3 +79,5 @@ IHE_style <- function() {
 	  border(color = IHE_Black, size = 0.8, linetype = NULL)))
 }
 #-----------------------------------
+
+
