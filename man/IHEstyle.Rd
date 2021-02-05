@@ -2,9 +2,14 @@
 % Please edit documentation in R/IHE_style.R
 \docType{data}
 \name{IHEstyle}
+\alias{IHEstyle}
+\alias{IHE_BlueGray}
 \title{IHEstyle}
+\format{
+
+}
 \usage{
-This package allows you to add the IHE theme to your ggplot graphics.
+Add + IHE_style to your ggplot2 function in order to use the package.
 }
 \description{
 This package allows you to add the IHE theme to your ggplot graphics.

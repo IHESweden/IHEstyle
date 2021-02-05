@@ -1,10 +1,14 @@
 #' @title IHEstyle
 #' @name IHEstyle
 #' @description This package allows you to add the IHE theme to your ggplot graphics.
+#' @usage Add + IHE_style to your ggplot2 function in order to use the package.
+#' @format
 #' @author Gunnar Brådvik, email = gunnar.bradvik@ihe.se
 #' @keywords IHE_style
 #' @import
-#' ggplot2, ggExtra, ggthemes
+#' ggplot2
+#' ggExtra
+#' ggthemes
 #' @examples
 #' library(ggplot2)
 #' ggplot2::ggplot(mpg, aes(displ, cty, colour = class)) +
