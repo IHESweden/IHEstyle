@@ -5,28 +5,14 @@
 #' @author Gunnar Brådvik, email = gunnar.bradvik@ihe.se
 #' @keywords IHE_style
 #' @aliases IHE_style
-#' @export
-#' @examples
-#' ggplot(mpg, aes(displ, cty, colour = class)) +
-#' geom_point() +
-#' IHE_style()
 #' @import
 #' ggplot2, ggExtra, ggthemes
-
-#Installs the library if it is not already installed
-package_check <- function(x)
-{
-  x = toString(substitute(x))
-  if(!require(x,character.only=TRUE))
-  {
-    install.packages(x)
-    base::library(x,character.only=TRUE)
-  }
-}
-
-package_check(ggplot2)
-package_check(ggExtra)
-package_check(ggthemes)
+#' @examples
+#' library(ggplot2)
+#' ggplot2::ggplot(mpg, aes(displ, cty, colour = class)) +
+#' geom_point() +
+#' IHE_style()
+#' @export
 
 #-----------------------------------
 #Iniziating the colours
