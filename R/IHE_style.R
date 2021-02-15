@@ -73,6 +73,7 @@ IHE_style <- function() {
 	  legend.key = element_rect(colour = "transparent", fill = "white"),
     line = element_line(size = 0.5, linetype = 1, lineend = "butt"),
     text = element_text(size=20)),
+    theme(strip.background =element_rect(fill=NA)), #for facet_grid and wrap so that we have no colour behind the header
 
     #new list elements
     guides(colour=guide_legend(override.aes = list(size=2))), #increasing the size of the legend a bit
