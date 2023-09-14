@@ -10,12 +10,11 @@
 #' ggExtra
 #' ggthemes
 #' extrafont
-#' tidyverse
 #' @examples
 #' library(ggplot2)
 #' library(ggExtra)
 #' library(ggthemes)
-#' library(tidyverse)
+#' # library(tidyverse)
 #' library(extrafont)
 #' ggplot2::ggplot(mpg, aes(displ, cty, colour = class)) +
 #' geom_point(size = 3) +
