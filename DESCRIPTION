@@ -1,7 +1,7 @@
 Package: IHEstyle
 Type: Package
 Title: IHEstyle for GGplot
-Version: 1.0.2
+Version: 1.0.3
 Author: Gunnar Brådvik
 Maintainer: Gunnar Brådvik <gb@ihe.se>
 Description: This is the GGplot colour package with the IHE colour scheme. It is used by the Swedish Institute for Health Economics in their publications. Note that both ggExtra and ggthemes packages must be installed in order to use this package.
@@ -15,8 +15,14 @@ Imports:
     ggplot2,
     ggExtra,
     ggthemes,
-	extrafont
+	  extrafont,
+	  tidyverse
 Year: 2019
 Roxygen: list(markdown = TRUE, load = "installed")
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Language: en-GB
+Collate:
+  Main.r
+  IHE_colours.r
+  IHE_style.r
+  IHE_style_2023.r

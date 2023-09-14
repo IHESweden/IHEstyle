@@ -1,0 +1,43 @@
+Use the command roxygen2::roxygenise() to build the file when you update it
+
+Test code to test the stuff:
+
+# Cleaning code ------------------------------------
+  if(!is.null(dev.list())) dev.off() #Clear plots
+  rm(list=ls()) # Clear console
+  cat("\014") # Clean workspace
+  gc()
+
+# Package code ------------------------------------
+  # Installs the library if it is not already installed. If we put GitHub to TRUE we download the package from GitHub instead
+    library <- function(package_name, GitHub = FALSE)
+    {
+      package_name = toString(substitute(package_name))
+
+      if (GitHub == TRUE)
+      {
+        install_github(package_name, quiet = TRUE)
+        package_name = gsub(".*/","",package_name) #package "IHESweden/IHEstyle" should be loaded as "IHEstyle" even if there is a different installation part
+        base::library(package_name,character.only=TRUE)
+      }
+      else
+      {
+        if(!require(package_name,character.only=TRUE))
+        {
+          install.packages(package_name)
+          base::library(package_name,character.only=TRUE)
+        }
+      }
+    }
+
+# Loading the libs ------------------------------------
+  library(devtools) # needed for the GitHub installation
+  library("IHESweden/IHEstyle", TRUE) # installs the IHEstyle package from GitHub if needed
+
+# Plot --------
+  library(tidyverse)
+
+  ggplot2::ggplot(mpg, aes(displ, cty, colour = class)) +
+    geom_point(size = 3) +
+    IHEstyle2023()
+    #IHE_style()
