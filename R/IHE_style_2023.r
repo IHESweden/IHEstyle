@@ -1,9 +1,6 @@
 # The ggplot2 function for the IHE style from 2023 -------------------------
 #' @export
-  IHEstyle2023 <- function() {
-    extrafont::font_import(pattern = "trebuc.ttf", prompt = F) # Load the fonts
-	#extrafont::loadfonts(device = "win")
-  
+  IHEstyle2023 <- function() {  
     return(
       list(
         ggplot2::theme( #list combining the theme itself and some settings for the plot
