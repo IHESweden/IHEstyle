@@ -2,7 +2,7 @@
 #' @export
   IHEstyle2023 <- function() {
     extrafont::font_import(pattern = "trebuc.ttf", prompt = F) # Load the fonts
-	extrafont::loadfonts(device = "win")
+	#extrafont::loadfonts(device = "win")
   
     return(
       list(
