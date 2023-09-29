@@ -80,3 +80,13 @@
   ColourPalette2023 <- c(IHEPrimaryColours, IHESecondaryColours,
                          Dark_Green, Yellow, Purple, Pink, Brown, Lime_Yellow, Blue, Green, Green_Blue, Turquoise, Dark_Red, Deep_Blue, Light_Red,
                          "#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D")
+
+#' @export
+	# Exports the colour palette. Pick a number for using retro colours, otherwise it will just return the latest colours
+	IHEcolourpalette <- function(colourSet = 0) {
+		if(colourSet == 1) {
+			return(Colour_Palette)
+		} else {
+			return(ColourPalette2023)
+		}
+	}
