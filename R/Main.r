@@ -25,4 +25,4 @@
   #library(extrafont)
   #extrafont::font_import(prompt = FALSE)
   extrafont::font_import(pattern = "trebuc.ttf", prompt = F)
-  extrafont::loadfonts(device = "win")
+  #extrafont::loadfonts(device = "win")
