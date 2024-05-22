@@ -1,6 +1,11 @@
-# The ggplot2 function for the IHE style from 2023 -------------------------
+#' @title IHEstyle2023
+#'
+#' @description The ggplot2 function for the IHE style from 2023
+#'
+#' @return Code to add to a ggplot2 plot
+#'
 #' @export
-  IHEstyle2023 <- function() {  
+  IHEstyle2023 <- function() {
     return(
       list(
         ggplot2::theme( #list combining the theme itself and some settings for the plot
