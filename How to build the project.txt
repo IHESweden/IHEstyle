@@ -1,3 +1,5 @@
 Run this code:
 
 roxygen2::roxygenise()
+
+Also note: https://stackoverflow.com/questions/14728326/files-in-collate-field-missing-from-package-when-installing-from-github

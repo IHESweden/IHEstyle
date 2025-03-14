@@ -1,10 +1,10 @@
 #' @title IHEstyle
 #' @name IHEstyle
 #' @description This package allows you to add the IHE theme to your ggplot graphics. Note that we have saved the old styles in the package for backwards comparability. The current style is IHEStyle2023.
-#' @usage Add + IHEstyle2023 to your ggplot2 function in order to use the package.
+#' @usage Add + IHEstyle2025 to your ggplot2 function in order to use the package. Legacy packages are supported.
 ##### @format
 #' @author Gunnar Brådvik, email = gunnar.bradvik@ihe.se
-#' @keywords IHEstyle2023
+#' @keywords IHEstyle2025
 #' @import
 #' ggplot2
 #' ggExtra
@@ -24,5 +24,6 @@
     #install.packages("extrafont")
     #library(extrafont)
     #extrafont::font_import(prompt = FALSE)
-    extrafont::font_import(pattern = "trebuc.ttf", prompt = F)
+    extrafont::font_import(pattern = "trebuc.ttf",
+                           prompt = F)
     extrafont::loadfonts(device = "win")

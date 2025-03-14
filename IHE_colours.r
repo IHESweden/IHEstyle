@@ -91,8 +91,16 @@
         Dark_Red = "#AC0000"
         Light_Red = "#E20000"
 
-    # IHE primary + IHE secondary + additional colours
-        ColourPalette2023 <- c(IHEPrimaryColours, IHESecondaryColours,
+    # 2023: IHE primary + IHE secondary + additional colours
+        ColourPalette2023 <- c(IHEDeepBlue, IHERed, IHELightBlue, IHEGreen, IHEYellow, # Primary colours, except for black
+                               IHESecondaryColours,
+                               Dark_Green, Yellow, Purple, Pink, Brown, Lime_Yellow, Blue, Green, Green_Blue, Turquoise, Dark_Red, Deep_Blue, Light_Red,
+                               "#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D")
+
+# Initiating the colours for IHE Style from 2025 -------------------------
+    # The colours are based on IHE style from 2023
+    # 2025: IHE primary + IHE secondary + additional colours - IHE Black
+        ColourPalette2025 <- c(IHEPrimaryColours, IHESecondaryColours,
                                Dark_Green, Yellow, Purple, Pink, Brown, Lime_Yellow, Blue, Green, Green_Blue, Turquoise, Dark_Red, Deep_Blue, Light_Red,
                                "#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D")
 
@@ -102,6 +110,8 @@
         IHEcolourpalette <- function(colourSet = 0) {
             if(colourSet == 1) {
                 return(Colour_Palette)
+            } else if(colourSet == 2) {
+                return(ColourPalette2025)
             } else {
                 return(ColourPalette2023)
             }
