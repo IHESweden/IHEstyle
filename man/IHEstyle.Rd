@@ -4,10 +4,10 @@
 \alias{IHEstyle}
 \title{IHEstyle}
 \usage{
-Add + IHEstyle2025 to your ggplot2 function in order to use the package. Legacy packages are supported.
+Add + IHEstyle2025 to your ggplot2 function in order to use the package.
 }
 \description{
-This package allows you to add the IHE theme to your ggplot graphics. Note that we have saved the old styles in the package for backwards comparability. The current style is IHEStyle2023.
+This package allows you to add the IHE theme to your ggplot graphics. Note that we have saved the old styles in the package for backwards comparability. The current style is IHEStyle2025.
 }
 \examples{
 library(ggplot2)

@@ -1,0 +1,5 @@
+Run this code:
+
+roxygen2::roxygenise()
+
+Add new files ot the description file under "collate"
